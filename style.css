@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-color: #004d99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.links-container {
+    margin: 20px;
+    padding: 20px;
+}
+
+#pagina-lista li {
+    margin: 10px 0;
+}
