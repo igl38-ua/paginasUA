@@ -36,17 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             titulo: "REDES",
             enlaces: [
-                { nombre: "redes.pdf", url: "../documentos/todo-redes.pdf" },
-                { nombre: "libro naranja", url: "../documentos/libro-naranja.pdf" },
-                { nombre: "libro tocho", url: "../documentos/libro-tocho.pdf" },
-                { nombre: "protocolos", url: "../documentos/protocolos_IEEE.md" },
+                { nombre: "redes.pdf", url: "documentos/todo-redes.pdf" },
+                { nombre: "libro naranja", url: "documentos/libro-naranja.pdf" },
+                { nombre: "libro tocho", url: "documentos/libro-tocho.pdf" },
+                { nombre: "protocolos", url: "documentos/protocolos_IEEE.md" },
             ]
         },
         {
             titulo: "HADA",
             enlaces: [
-                { nombre: "hada.pdf", url: "../documentos/hada.pdf" },
-                { nombre: "hada resumen", url: "../documentos/hada-resumen.pdf" },
+                { nombre: "hada.pdf", url: "documentos/hada.pdf" },
+                { nombre: "hada resumen", url: "documentos/hada-resumen.pdf" },
             ]
         }
     ];
