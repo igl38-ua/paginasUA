@@ -48,6 +48,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 { nombre: "hada.pdf", url: "documentos/hada.pdf" },
                 { nombre: "hada resumen", url: "documentos/hada-resumen.pdf" },
             ]
+        },
+        {
+            titulo: "DBD",
+            enlaces: [
+                { nombre: "puerto oracle", url: "https://dbd.dlsi.ua.es/abrirpuertooracle.php" },
+            ]
+        },
+        {
+            titulo: "SD",
+            enlaces: [
+                { nombre: "sd.pdf", url: "documentos/sd.pdf" },
+                { nombre: "todo sd", url: "https://sd-apuntes.netlify.app/"},
+            ]
         }
     ];
 
