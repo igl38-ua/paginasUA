@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             titulo: "AC",
             enlaces: [
-                { nombre: "ac.pdf", url: "../documentos/todo-ac.pdf" },
+                { nombre: "ac.pdf", url: "documentos/todo-ac.pdf" },
+                { nombre: "videos AC", url: "https://www.youtube.com/playlist?list=PLHH2Mq9hHn8u5F3BV8llu_a51PthewQtl"}
             ]
         },
         {
