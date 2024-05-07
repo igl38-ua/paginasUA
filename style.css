@@ -1,31 +1,32 @@
+/* Estilos Base */
+
 html, body {
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background: #121212;
     display: flex;
-    justify-content: flex-start; /* Aligns content at the start vertically */
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column; /* Organizes children elements in a column */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .header {
     width: 100%;
-    background-color: #161616; /* Dark blue background */
-    color: white;
+    background-color: #161616;
+    /* color: white; */
     display: flex;
-    justify-content: center; /* Center all content horizontally */
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    position: relative; /* Needed to position the GitHub button absolutely */
-    height: 60px; /* Set a specific height for the header */
+    position: relative;
+    height: 60px;
 }
 
 .header h1 {
-    margin: 0; /* Remove margin to ensure true centering */
     text-align: center;
 }
 
@@ -35,25 +36,25 @@ html, body {
     color: white;
     font-size: 24px;
     cursor: pointer;
-    position: absolute; /* Position the button absolutely */
-    left: 20px; /* Place it 20px from the left */
-    top: 50%; /* Center it vertically */
-    transform: translateY(-70%); /* Offset the button by half its height */
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.header button:hover{
+.header button:hover {
     background-color: #272424c5;
 }
 
 .container {
-    width: 700px; /* Adjust width as needed */
+    width: 90%; /* Adjust to use percentage for responsiveness */
+    max-width: 700px; /* Maximum width */
     padding: 20px;
-    background: #161616; /* Slightly lighter than the body background */
+    background: #161616;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     margin-top: 20px;
-    align-self: center; /* Centers the container horizontally */
 }
 
 .section {
@@ -61,10 +62,9 @@ html, body {
 }
 
 button {
-    margin-top: 10px;
+    /* width: 100%; Full width for easier clicking on mobile */
     padding: 15px 20px;
     font-size: 16px;
-    border: none;
     border-radius: 5px;
     background-color: #007BFF;
     color: white;
@@ -76,13 +76,39 @@ button:hover {
     background-color: #0056b3;
 }
 
-h1 {
+h1, h2 {
     color: white;
-    padding: 10px 0;
-    border-radius: 5px;
 }
 
-h2 {
-    color: #ffffff;
-    margin: 20px 0;
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .header h1 {
+        margin-top: 10px;
+    }
+
+    .header button {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 95%; /* A little more width on smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px; /* Smaller font size for very small devices */
+    }
+
+    .header button {
+        /* font-size: 20px; Smaller icon size */
+    }
 }
