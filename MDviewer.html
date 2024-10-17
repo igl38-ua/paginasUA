@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Markdown</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos básicos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #url-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 16px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        button {
+            margin: 0 auto;
+            display: block;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #preview {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #fff;
+            border: none;
+            box-sizing: border-box; /* Ajusta el tamaño automáticamente */
+        }
+
+        @media (max-width: 768px) {
+            #url-input, button {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Input para la URL del archivo .md -->
+    <input type="text" id="url-input" placeholder="Introduce la URL del archivo .md">
+    <button onclick="loadMarkdownFile()">Cargar Markdown</button>
+
+    <!-- Visor de Markdown a pantalla completa y dinámicamente ajustable -->
+    <div id="preview"></div>
+
+    <!-- Bibliotecas necesarias -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+        const preview = document.getElementById('preview');
+        const urlInput = document.getElementById('url-input');
+
+        // Función para cargar un archivo Markdown desde una URL
+        async function loadMarkdownFile() {
+            const url = urlInput.value;
+            if (url) {
+                try {
+                    const response = await fetch(url);
+                    if (response.ok) {
+                        const markdownText = await response.text();
+                        renderMarkdown(markdownText);
+                    } else {
+                        alert("No se pudo cargar el archivo. Verifica la URL.");
+                    }
+                } catch (error) {
+                    alert("Error al cargar el archivo: " + error.message);
+                }
+            }
+        }
+
+        // Función para renderizar Markdown a pantalla completa
+        function renderMarkdown(markdownText) {
+            const htmlContent = marked.parse(markdownText);
+            preview.innerHTML = htmlContent;
+        }
+
+        // Escucha los cambios de tamaño de la ventana
+        window.addEventListener('resize', () => {
+            preview.style.height = `${window.innerHeight}px`; // Ajustar la altura del visor
+        });
+
+        // Establecer el tamaño inicial del visor
+        preview.style.height = `${window.innerHeight}px`;
+    </script>
+
+</body>
+</html>
