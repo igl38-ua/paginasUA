@@ -11,7 +11,7 @@ IEEE 802.3	Ethernet (CSMA/CD)
 IEEE 802.3u	Fast Ethernet
  	100BaseX				Fast Ethernet 4B/5B sobre UTP 5, STP y fibra óptica
  	100BaseFX				100BaseX 4B/5B sobre fibra óptica multimodo (hasta 400 m). Codificación NRZI
- 	100BaseTX				100BaseX 4B/5B sobre cable UTP 5 (hasta 100 m)
+ 	100BaseTX				100BaseX 4B/5B sobre cable UTP 5 (hasta 100 m). Codificación MLT-3
 
 Gigabit Ethernet
  	1000BaseT (IEEE 802.3z)			Sobre cable UTP 5 de 1 Gbps (hasta 100 m) en modo full-duplex. Codificación 4D-PAM5
