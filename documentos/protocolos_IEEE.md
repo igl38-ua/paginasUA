@@ -4,7 +4,7 @@ IEEE 802.x	Red LAN
 IEEE 802.2	LLC (Protocolo de Control del Enlace Lógico)
 
 IEEE 802.3	Ethernet (CSMA/CD)
-	10BaseT					Concentrador Ethernet (Hub) UTP
+	10BaseT					Concentrador Ethernet (Hub) UTP. UTP cat 3 de 10 Mbps hasta 100 m. Codificación manchester (UTP)
 	10Base2					Cable coaxial fino de 10 Mbps hasta 185 m
 	10Base5					Cable coaxial grueso de 10 Mbps hasta 500 m
 
