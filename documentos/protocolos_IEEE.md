@@ -7,7 +7,6 @@ IEEE 802.3	Ethernet (CSMA/CD)
 	10BaseT					Concentrador Ethernet (Hub) UTP
 	10Base2					Cable coaxial fino de 10 Mbps hasta 185 m
 	10Base5					Cable coaxial grueso de 10 Mbps hasta 500 m
-	10BaseT					Concentrador Ethernet (Hub) UTP
 
 IEEE 802.3u	Fast Ethernet
  	100BaseX				Fast Ethernet 4B/5B sobre UTP 5, STP y fibra óptica
