@@ -19,7 +19,7 @@ IEEE 802.3u	Fast Ethernet	Half-duplex y full-duplex
 
 Gigabit Ethernet	Half-duplex y full-duplex
  	1000BaseT (IEEE 802.3z)			Sobre cable UTP 5 de 1 Gbps (hasta 100 m) en modo full-duplex. Codificación 4D-PAM5
- 	1000BaseX (IEEE 802.3ab)		8B/10B sobre fibra óptica (a 1 Gbps) o cable STP
+ 	1000BaseX (IEEE 802.3ab)		8B/10B sobre fibra óptica (a 1 Gbps) o cable STP. Codificación NRZI.
  		1000BaseLX y 1000Base SX	Sobre fibra óptica multimodo (hasta 500 m)
  		1000BaseLX			Sobre fibra óptica monomodo (hasta 5 Km)
 	10GBase-XX (IEEE 802.ae)
