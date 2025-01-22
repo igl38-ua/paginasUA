@@ -34,6 +34,7 @@ IEEE 802.1Q	LAN Virtual (VLAN)
 
 IEEE 802.11x	LAN Inalámbrica (CSMA/CA, RTS/CTS)
 	IEEE 802.11b				Señal portadora de 2.4 GHz
+ 	IEEE 802.11g				Señal portadora de 2.4 GHz a 14 niveles.
 	IEEE 802.11n  (Wi-Fi 4)			Señal portadora de 2.4 GHz y la de 5 GHz (19 canales), velocidades de hasta 600 Mbps
 	IEEE 802.11ac (Wi-Fi 5)			Señal portadora de 5 GHz (19 canales) y varias antenas, velocidades de hasta 1.3 Gbps
 	IEEE 802.11ax (Wi-Fi 6)			Señal portadora de 2.4 GHz y 5 GHz, modulación QAM-1024 y varias antenas, velocidades de hasta 10 Gbps
