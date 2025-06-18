@@ -26,8 +26,9 @@ Gigabit Ethernet
 		10GBase-XX (IEEE 802.ae) 
 	 		Fibra óptica multimodo hasta 300 metros, monomodo hasta 40 Km.
 	   		Cable UTP (10GBase-T) de categoría 6 y 7, hasta 100 metros.
-	     	40GBase-XX – 100GBase-XX (IEEE 802.3ba) 
+	     	40GBase-XX - 100GBase-XX (IEEE 802.3ba) 
 	      		Fibra óptica WDM
+	 	2.5GBase-T - 5GBase-T (IEEE 802.3bz) 
 	 		UTP de categoría 5e (2.5 Gbps) y categoría 6 (5 Gbps) y distancias hasta 100 metros
 
 IEEE 802.1Q	LAN Virtual (VLAN)
